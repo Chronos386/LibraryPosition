@@ -118,8 +118,8 @@ class NetworkConnector:
     def run(self):
         self.__init()
         self.__addURL()
-        self.app.run(port=80, host='192.168.100.3')
-        # serve(self.app, host="0.0.0.0", port=80)
+        # self.app.run(port=80, host='192.168.100.3')
+        serve(self.app, host="0.0.0.0", port=80)
 
     def __allowedFile(self, filename):
         return '.' in filename and \

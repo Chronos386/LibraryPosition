@@ -1,4 +1,5 @@
-
+from NetworkConnectors.NetworkConnector import NetworkConnector
 
 if __name__ == '__main__':
-    print('PyCharm')
+    server = NetworkConnector()
+    server.run()
